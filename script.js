@@ -3,7 +3,7 @@ function openInstagram() {
 }
 
 function openWhatsApp() {
-  window.open("https://wa.me/919XXXXXXXXX", "_blank");
+  window.open("https://wa.me/9902868300";
 }
 
 function contactNow() {
