@@ -29,10 +29,10 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #f8f9fa, #e5e7eb);
-  text-align: center;
+  background: url("https://i.imgur.com/sQp2xVs.jpeg") center/cover no-repeat;
+  position: relative;
+  color: white;
 }
-
 .hero h1 {
   font-size: 42px;
   color: #111;
