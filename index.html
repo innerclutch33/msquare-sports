@@ -1,47 +1,45 @@
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M Square Sports & Menswear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<!-- SIDEBAR -->
-  <div id="overlay" onclick="toggleMenu()"></div>
-<div id="sidebar" class="sidebar">
+<body>
+  <div id="sidebar" class="sidebar">
+
   <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
 
   <h3>Categories</h3>
-  <a href="#" onclick="filterProducts('all')">All Products</a>
-  <a href="#" onclick="filterProducts('cricket')">Cricket</a>
-  <a href="#" onclick="filterProducts('shoes')">Shoes</a>
-  <a href="#" onclick="filterProducts('tshirt')">T-Shirts</a>
 
-  <hr>
+  <a href="#products">All Products</a>
+  <a href="#products">Cricket</a>
+  <a href="#products">Shoes</a>
+  <a href="#products">T-Shirts</a>
+  <a href="#services">Services</a>
 
-  <h3>Services</h3>
-  <a href="#">Customized Sportswear</a>
-  <a href="#">Casual Wear</a>
-  <a href="#">Printed T-Shirts</a>
-  <a href="#">Trophies & Momento</a>
-  <a href="#">Sports Equipment</a>
 </div>
-
-<!-- OVERLAY -->
-<div id="overlay" onclick="toggleMenu()"></div>
 
 <!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/919902868300?text=Hi I want to know about your products" 
-   class="whatsapp-float" target="_blank">Chat</a>
+   class="whatsapp-float" target="_blank">💬</a>
 
 <!-- NAVBAR -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
 <nav class="navbar">
   <div class="nav-left">
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <img src="https://i.imgur.com/hMB662h.png" class="logo" alt="MSquare Logo">
+    <img src="https://i.imgur.com/hMB662h.png" class="logo">
     <h2>MSquare Sports</h2>
   </div>
 
   <div class="nav-right">
     <a href="#">Home</a>
+    <a href="#services">Services</a>
     <a href="#products">Products</a>
     <a href="#contact">Contact</a>
   </div>
-</nav>
+<div class="menu-icon" onclick="toggleMenu()">☰</div> </nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -53,6 +51,32 @@
     </a>
   </div>
 </section>
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+<div id="sidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+
+  <h3>Our Services</h3>
+
+  <a href="#">Customized Sportswear</a>
+  <a href="#">Casual Wear</a>
+  <a href="#">Printed T-Shirts</a>
+  <a href="#">Trophies & Momento</a>
+  <a href="#">Sports Equipment</a>
+  <a href="#">Technosport Wears</a>
+
+  <hr>
+
+  <h3>Products</h3>
+
+  <a href="#products">Cricket Bat</a>
+  <a href="#products">Shoes</a>
+  <a href="#products">T-Shirts</a>
+
+</div>
+</section>
 
 <!-- PRODUCTS -->
 <section id="products">
@@ -60,42 +84,42 @@
 
   <div class="grid">
 
-    <!-- BAT -->
-    <div class="product" data-category="cricket">
-      <img src="https://i.imgur.com/tFSFWAl.jpeg" alt="Cricket Bat">
-      <div class="product-info">
-        <h3>Cricket Bat</h3>
-        <p class="price">₹1,599</p>
-        <a href="https://wa.me/919902868300?text=I want Cricket Bat" target="_blank">
-          <button class="buy-btn">Order Now</button>
-        </a>
-      </div>
-    </div>
+    <div class="product">
+  <img src="https://i.imgur.com/tFSFWAl.jpeg" alt="Cricket Bat">
 
-    <!-- SHOES -->
-    <div class="product" data-category="shoes">
-      <img src="https://i.imgur.com/gRNbf8H.jpeg" alt="Shoes">
-      <div class="product-info">
-        <h3>Sports Shoes</h3>
-        <p class="price">₹1,499</p>
-        <a href="https://wa.me/919902868300?text=I want Sports Shoes" target="_blank">
-          <button class="buy-btn">Order Now</button>
-        </a>
-      </div>
-    </div>
+  <div class="product-info">
+    <h3>Cricket Bat</h3>
+    <p class="price">₹1,599</p>
 
-    <!-- TSHIRT -->
-    <div class="product" data-category="tshirt">
-      <img src="https://i.imgur.com/n0PylmQ.jpeg" alt="T-Shirt">
-      <div class="product-info">
-        <h3>Sports T-Shirt</h3>
-        <p class="price">₹599</p>
-        <a href="https://wa.me/919902868300?text=I want T-Shirt" target="_blank">
-          <button class="buy-btn">Order Now</button>
-        </a>
-      </div>
-    </div>
+    <a href="https://wa.me/919902868300?text=I want Cricket Bat" target="_blank">
+      <button class="buy-btn">Order Now</button>
+    </a>
+  </div>
+</div>
+<div class="product">
+  <img src="https://i.imgur.com/gRNbf8H.jpeg" alt="Sports Shoes">
 
+  <div class="product-info">
+    <h3>Sports Shoes</h3>
+    <p class="price">₹1,499</p>
+
+    <a href="https://wa.me/919902868300?text=I want Sports Shoes" target="_blank">
+      <button class="buy-btn">Order Now</button>
+    </a>
+  </div>
+</div>
+<div class="product">
+  <img src="https://i.imgur.com/n0PylmQ.jpeg" alt="T-Shirt">
+
+  <div class="product-info">
+    <h3>Sports T-Shirt</h3>
+    <p class="price">₹599</p>
+
+    <a href="https://wa.me/919902868300?text=I want T-Shirt" target="_blank">
+      <button class="buy-btn">Order Now</button>
+    </a>
+  </div>
+</div>
   </div>
 </section>
 
@@ -120,11 +144,12 @@
     width="100%" 
     height="300"
     style="border:0;"
-    allowfullscreen=""
     loading="lazy">
   </iframe>
 
 </section>
+
+<!-- FOOTER -->
 <footer>
   <p>© 2026 M Square Sports & Menswear</p>
 </footer>
@@ -132,3 +157,4 @@
 <script src="script.js"></script>
 
 </body>
+</html>
