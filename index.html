@@ -1,36 +1,33 @@
+<!-- IMPROVED VERSION (CLEAN + FIXED STRUCTURE) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M Square Sports & Menswear - Sportswear, Shoes, Cricket Equipment in Bangalore">
   <title>M Square Sports & Menswear</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="sidebar" class="sidebar">
 
+<!-- SIDEBAR (ONLY ONE) -->
+<div id="sidebar" class="sidebar">
   <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
 
   <h3>Categories</h3>
-
-  <a href="#products">All Products</a>
-  <a href="#products">Cricket</a>
-  <a href="#products">Shoes</a>
-  <a href="#products">T-Shirts</a>
-  <a href="#services">Services</a>
-
+  <a href="#" onclick="filterProducts('all')">All Products</a>
+  <a href="#" onclick="filterProducts('cricket')">Cricket</a>
+  <a href="#" onclick="filterProducts('shoes')">Shoes</a>
+  <a href="#" onclick="filterProducts('tshirt')">T-Shirts</a>
 </div>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/919902868300?text=Hi I want to know about your products" 
-   class="whatsapp-float" target="_blank">💬</a>
-
 <!-- NAVBAR -->
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
 <nav class="navbar">
   <div class="nav-left">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <img src="https://i.imgur.com/hMB662h.png" class="logo">
-    <h2>MSquare Sports</h2>
+    <h2>M Square Sports</h2>
   </div>
 
   <div class="nav-right">
@@ -39,7 +36,7 @@
     <a href="#products">Products</a>
     <a href="#contact">Contact</a>
   </div>
-<div class="menu-icon" onclick="toggleMenu()">☰</div> </nav>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -51,31 +48,39 @@
     </a>
   </div>
 </section>
-<!-- SERVICES -->
-<section id="services">
+
+<!-- SERVICES (UPGRADED PREMIUM SECTION) -->
+<section id="services" class="services">
   <h2 class="section-title">Our Services</h2>
-<div id="sidebar" class="sidebar">
 
-  <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+  <div class="services-grid">
 
-  <h3>Our Services</h3>
+    <div class="service-card">
+      <h3>Customized Sportswear</h3>
+      <p>Team jerseys, uniforms, and custom designs tailored for your club or events.</p>
+    </div>
 
-  <a href="#">Customized Sportswear</a>
-  <a href="#">Casual Wear</a>
-  <a href="#">Printed T-Shirts</a>
-  <a href="#">Trophies & Momento</a>
-  <a href="#">Sports Equipment</a>
-  <a href="#">Technosport Wears</a>
+    <div class="service-card">
+      <h3>Casual Wear</h3>
+      <p>Comfortable and stylish daily wear with premium quality fabrics.</p>
+    </div>
 
-  <hr>
+    <div class="service-card">
+      <h3>Printed T-Shirts</h3>
+      <p>High-quality custom prints for teams, events, and personal branding.</p>
+    </div>
 
-  <h3>Products</h3>
+    <div class="service-card">
+      <h3>Trophies & Mementos</h3>
+      <p>Awards and recognition items for tournaments and special occasions.</p>
+    </div>
 
-  <a href="#products">Cricket Bat</a>
-  <a href="#products">Shoes</a>
-  <a href="#products">T-Shirts</a>
+    <div class="service-card">
+      <h3>Sports Equipment</h3>
+      <p>All essential gear for cricket, fitness, and other sports.</p>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <!-- PRODUCTS -->
