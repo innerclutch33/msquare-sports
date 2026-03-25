@@ -1,4 +1,3 @@
-/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,8 +5,149 @@ body {
   color: #111;
 }
 
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+}
+
+.hero button {
+  margin-top: 10px;
+}
+{
+  padding: 12px 25px;
+  background: #e11d48;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CARDS */
+.card {
+  background: #f9fafb;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 200px;
+  border: 1px solid #eee;
+}
+
+/* PRODUCTS */
+.product {
+  margin: 15px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.product img {
+  width: 220px;
+  border-radius: 10px;
+}
+
+/* BUTTONS */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #e11d48;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  background: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 html {
   scroll-behavior: smooth;
+}
+.product {
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .product img {
+    width: 90%;
+  }
+}
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
 }
 
 /* NAVBAR */
@@ -16,7 +156,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #fff;
+  background: white;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -26,7 +166,7 @@ html {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .logo {
@@ -38,12 +178,6 @@ html {
   text-decoration: none;
   color: #111;
   font-weight: 500;
-}
-
-/* MENU ICON */
-.menu-icon {
-  font-size: 26px;
-  cursor: pointer;
 }
 
 /* HERO */
@@ -66,11 +200,6 @@ html {
 
 .hero h1 {
   font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  color: #ddd;
 }
 
 .hero button {
@@ -82,27 +211,13 @@ html {
   cursor: pointer;
 }
 
-/* SECTIONS */
-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-/* GRID */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* PRODUCT CARD */
+/* PRODUCTS */
 .product {
-  width: 250px;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
   margin: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
@@ -110,41 +225,19 @@ section {
   transform: translateY(-8px);
 }
 
-/* IMAGE */
 .product img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  background: #f5f5f5;
+  border-radius: 10px;
 }
 
-/* PRODUCT INFO */
-.product-info {
-  padding: 15px;
-  text-align: center;
-}
-
-.product h3 {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-.price {
-  font-weight: bold;
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* BUTTON */
-.buy-btn {
-  width: 100%;
-  background: #007bff;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-/* GENERAL BUTTON */
 button {
   background: #007bff;
   color: white;
@@ -154,94 +247,196 @@ button {
   cursor: pointer;
 }
 
+/* FOOTER */
+footer {
+  background: #f5f5f5;
+  padding: 15px;
+}
+/* PRODUCT CARD */
+.product {
+  width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* IMAGE FIX */
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* 🔥 THIS MAKES IT LOOK LIKE DECATHLON */
+  background: #f5f5f5;
+}
+
+/* INFO */
+.product-info {
+  padding: 15px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* BUTTON */
+.buy-btn {
+  width: 100%;
+  background: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* HOVER EFFECT */
+.product:hover {
+  transform: translateY(-8px);
+}
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+/* SECTION TITLE */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 30px;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+/* ICON */
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.service-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* HOVER */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+/* MENU ICON */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
 /* SIDEBAR */
 .sidebar {
+  height: 100%;
+  width: 0;
   position: fixed;
   top: 0;
-  left: -260px;
-  width: 260px;
-  height: 100%;
-  background: #fff;
-  transition: 0.3s;
-  z-index: 2000;
-  padding-top: 60px;
-  box-shadow: 5px 0 20px rgba(0,0,0,0.1);
-}
-
-.sidebar.active {
   left: 0;
+  background: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 2000;
 }
 
+/* LINKS */
+.sidebar a {
+  display: block;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: #333;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+}
+body.menu-open {
+  overflow: hidden;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 2000;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
 .sidebar h3 {
   padding: 10px 25px;
+  margin: 15px 0 5px;
   font-size: 14px;
   color: #777;
   text-transform: uppercase;
 }
 
+/* LINKS */
 .sidebar a {
   display: block;
   padding: 12px 25px;
   color: #111;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
 }
 
+/* HOVER */
 .sidebar a:hover {
   background: #f5f5f5;
 }
 
+/* CLOSE BUTTON */
 .close-btn {
   position: absolute;
   top: 10px;
   right: 20px;
   font-size: 28px;
-}
-
-/* OVERLAY */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
-  display: none;
-  z-index: 1500;
-}
-
-#overlay.active {
-  display: block;
-}
-
-/* WHATSAPP */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* FOOTER */
-footer {
-  background: #f5f5f5;
-  padding: 15px;
-  font-size: 14px;
-  color: #555;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-}
+  color: #111;
+}  alternate accordingly
